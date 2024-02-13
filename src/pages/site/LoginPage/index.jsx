@@ -88,7 +88,7 @@ function LoginPage() {
           <Flex direction="col">
             <Heading type="h1">Agile App</Heading>
             <Heading type="h3" className="text-slate-500">
-              Login to your panel
+              Login to the panel
             </Heading>
             {errors.form && (
               <Heading type="p" className="text-red-500">
@@ -96,6 +96,7 @@ function LoginPage() {
               </Heading>
             )}
           </Flex>
+
           <Flex direction="col" gap={2} className="w-[400px]">
             <Input
               type="email"
