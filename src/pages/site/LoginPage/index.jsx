@@ -83,7 +83,7 @@ function LoginPage() {
 
   return (
     <section className="h-screen  flex justify-center items-center">
-      <Box className="border-t-8 border-indigo-800">
+      <Box className="border-t-8 border-indigo-800" padding="xl">
         <Flex direction="col" gap={8}>
           <Flex direction="col">
             <Heading type="h1">Agile App</Heading>
@@ -96,13 +96,13 @@ function LoginPage() {
               </Heading>
             )}
           </Flex>
-          <Flex direction="col" gap={2}>
+          <Flex direction="col" gap={2} className="w-[400px]">
             <Input
               type="email"
               label="Your email address"
               id="email"
               placeholder="Example@gmail.com"
-              width="lg"
+              width="full"
               error={errors.email ? errors.email : ""}
               value={inputs.email}
               onChange={(e) => inputsHandler("email", e.target.value)}
@@ -112,7 +112,7 @@ function LoginPage() {
               type="password"
               label="Your password"
               id="password"
-              width="lg"
+              width="full"
               error={errors.password ? errors.password : ""}
               value={inputs.password}
               onChange={(e) => inputsHandler("password", e.target.value)}
